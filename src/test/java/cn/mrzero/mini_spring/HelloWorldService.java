@@ -2,7 +2,13 @@ package cn.mrzero.mini_spring;
 
 public class HelloWorldService {
 	
-	public String sayHello() {
-		return "Hello World";
-	}
+	private String text;
+
+    public void helloWorld(){
+        System.out.println(text);
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
 }

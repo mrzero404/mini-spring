@@ -9,7 +9,7 @@ public abstract class AbstractBeanFactory implements BeanFactory{
 	
 	private Map<String,BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String,BeanDefinition>();
 
-	public void registerBeanDefinition(String name, BeanDefinition beanDefinition) {
+	public void registerBeanDefinition(String name, BeanDefinition beanDefinition) throws Exception {
 		//用拿到的Class类创建出Object对象，再放到beanDefinition中的成员变量bean
 		Object object = doCreateBean(beanDefinition);
 		beanDefinition.setBean(object);
@@ -23,5 +23,5 @@ public abstract class AbstractBeanFactory implements BeanFactory{
 	/*
 	 *由子类去实现bean的初始化
 	 */
-	protected abstract Object doCreateBean(BeanDefinition beanDefinition);
+	protected abstract Object doCreateBean(BeanDefinition beanDefinition) throws Exception;
 }

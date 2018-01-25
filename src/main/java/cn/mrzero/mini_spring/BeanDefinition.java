@@ -1,4 +1,7 @@
 package cn.mrzero.mini_spring;
+
+import java.util.List;
+
 //用一个类来装一个类，为啥要这样做？
 public class BeanDefinition {
 	//这些成员变量分别是用来做什么的？
@@ -7,6 +10,8 @@ public class BeanDefinition {
 	private Class beanClass;
 	
 	private String beanClassName;
+	
+	private PropertyValues propertyValues;
 	
 	public BeanDefinition() {
 	}
@@ -39,6 +44,15 @@ public class BeanDefinition {
 			e.printStackTrace();
 		}
 	}
+
+	public PropertyValues getPropertyValues() {
+		return propertyValues;
+	}
+
+	public void setPropertyValues(PropertyValues propertyValues) {
+		this.propertyValues = propertyValues;
+	}
+	
 	
 	
 }
