@@ -21,7 +21,7 @@ public class BeanFactoryTest {
 		xmlBeanDefinitionReader.loadBeanDefinitions("ioc.xml");
 		
 		//2.初始化BeanFactory与注册BeanDefinition
-		BeanFactory beanFactory = new AutowireCapableBeanFactory();
+		AbstractBeanFactory beanFactory = new AutowireCapableBeanFactory();
 		for(Map.Entry<String, BeanDefinition> beanDenifitionEntry : xmlBeanDefinitionReader.getRegistry().entrySet()){
 			beanFactory.registerBeanDefinition(beanDenifitionEntry.getKey(), beanDenifitionEntry.getValue());
 		}
