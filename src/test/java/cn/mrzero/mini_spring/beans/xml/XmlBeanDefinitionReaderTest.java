@@ -1,12 +1,13 @@
-package cn.mrzero.mini_spring.xml;
+package cn.mrzero.mini_spring.beans.xml;
 
 import java.util.Map;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import cn.mrzero.mini_spring.BeanDefinition;
-import cn.mrzero.mini_spring.io.ResourceLoader;
+import cn.mrzero.mini_spring.beans.BeanDefinition;
+import cn.mrzero.mini_spring.beans.io.ResourceLoader;
+import cn.mrzero.mini_spring.beans.xml.XmlBeanDefinitionReader;
 
 
 public class XmlBeanDefinitionReaderTest {

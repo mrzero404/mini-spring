@@ -1,4 +1,4 @@
-package cn.mrzero.mini_spring.xml;
+package cn.mrzero.mini_spring.beans.xml;
 
 import java.io.InputStream;
 
@@ -10,11 +10,11 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import cn.mrzero.mini_spring.AbstractBeanDefinitionReader;
-import cn.mrzero.mini_spring.BeanDefinition;
 import cn.mrzero.mini_spring.BeanReference;
-import cn.mrzero.mini_spring.PropertyValue;
-import cn.mrzero.mini_spring.io.ResourceLoader;
+import cn.mrzero.mini_spring.beans.AbstractBeanDefinitionReader;
+import cn.mrzero.mini_spring.beans.BeanDefinition;
+import cn.mrzero.mini_spring.beans.PropertyValue;
+import cn.mrzero.mini_spring.beans.io.ResourceLoader;
 /*
  * 用解析xml文件得到的值来初始化BeanDefinition
  */

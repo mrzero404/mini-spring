@@ -5,11 +5,12 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import cn.mrzero.mini_spring.factory.AbstractBeanFactory;
-import cn.mrzero.mini_spring.factory.AutowireCapableBeanFactory;
-import cn.mrzero.mini_spring.factory.BeanFactory;
-import cn.mrzero.mini_spring.io.ResourceLoader;
-import cn.mrzero.mini_spring.xml.XmlBeanDefinitionReader;
+import cn.mrzero.mini_spring.beans.BeanDefinition;
+import cn.mrzero.mini_spring.beans.factory.AbstractBeanFactory;
+import cn.mrzero.mini_spring.beans.factory.AutowireCapableBeanFactory;
+import cn.mrzero.mini_spring.beans.factory.BeanFactory;
+import cn.mrzero.mini_spring.beans.io.ResourceLoader;
+import cn.mrzero.mini_spring.beans.xml.XmlBeanDefinitionReader;
 
 public class BeanFactoryTest {
 	
@@ -26,7 +27,7 @@ public class BeanFactoryTest {
 			beanFactory.registerBeanDefinition(beanDenifitionEntry.getKey(), beanDenifitionEntry.getValue());
 		}
 		//3.获取bean
-		HelloWorldService helloWorldService =(HelloWorldService) beanFactory.getBean("helloWorldService");
+		HelloWorldServiceImpl helloWorldService =(HelloWorldServiceImpl) beanFactory.getBean("helloWorldService");
 		helloWorldService.helloWorld();
 	}
 	
@@ -46,7 +47,7 @@ public class BeanFactoryTest {
         beanFactory.preInstantiateSingletons();
 
 		// 4.获取bean
-		HelloWorldService helloWorldService = (HelloWorldService) beanFactory.getBean("helloWorldService");
+		HelloWorldServiceImpl helloWorldService = (HelloWorldServiceImpl) beanFactory.getBean("helloWorldService");
 		helloWorldService.helloWorld();
 	}
 	

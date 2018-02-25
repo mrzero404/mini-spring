@@ -1,10 +1,11 @@
-package cn.mrzero.mini_spring.factory;
+
+package cn.mrzero.mini_spring.beans.factory;
 
 import java.lang.reflect.Field;
 
-import cn.mrzero.mini_spring.BeanDefinition;
 import cn.mrzero.mini_spring.BeanReference;
-import cn.mrzero.mini_spring.PropertyValue;
+import cn.mrzero.mini_spring.beans.BeanDefinition;
+import cn.mrzero.mini_spring.beans.PropertyValue;
 
 public class AutowireCapableBeanFactory extends AbstractBeanFactory{
 

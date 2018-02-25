@@ -1,7 +1,7 @@
-package context;
+package cn.mrzero.mini_spring.context;
 
-import cn.mrzero.mini_spring.BeanDefinition;
-import cn.mrzero.mini_spring.factory.AbstractBeanFactory;
+import cn.mrzero.mini_spring.beans.BeanDefinition;
+import cn.mrzero.mini_spring.beans.factory.AbstractBeanFactory;
 
 public abstract class AbstractApplicationContext implements ApplicationContext {
 	

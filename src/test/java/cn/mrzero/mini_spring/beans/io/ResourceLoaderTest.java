@@ -1,9 +1,12 @@
-package cn.mrzero.mini_spring.io;
+package cn.mrzero.mini_spring.beans.io;
 
 import java.io.InputStream;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import cn.mrzero.mini_spring.beans.io.Resource;
+import cn.mrzero.mini_spring.beans.io.ResourceLoader;
 
 
 public class ResourceLoaderTest {

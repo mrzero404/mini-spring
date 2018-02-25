@@ -1,9 +1,9 @@
-package cn.mrzero.mini_spring;
+package cn.mrzero.mini_spring.beans;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import cn.mrzero.mini_spring.io.ResourceLoader;
+import cn.mrzero.mini_spring.beans.io.ResourceLoader;
 
 public abstract class AbstractBeanDefinitionReader implements BeanDefinitionReader{
 	

@@ -1,13 +1,13 @@
-package context;
+package cn.mrzero.mini_spring.context;
 
 import java.util.Map;
 import java.util.Map.Entry;
 
-import cn.mrzero.mini_spring.BeanDefinition;
-import cn.mrzero.mini_spring.factory.AbstractBeanFactory;
-import cn.mrzero.mini_spring.factory.AutowireCapableBeanFactory;
-import cn.mrzero.mini_spring.io.ResourceLoader;
-import cn.mrzero.mini_spring.xml.XmlBeanDefinitionReader;
+import cn.mrzero.mini_spring.beans.BeanDefinition;
+import cn.mrzero.mini_spring.beans.factory.AbstractBeanFactory;
+import cn.mrzero.mini_spring.beans.factory.AutowireCapableBeanFactory;
+import cn.mrzero.mini_spring.beans.io.ResourceLoader;
+import cn.mrzero.mini_spring.beans.xml.XmlBeanDefinitionReader;
 
 public class ClassPathXmlApplicationContext extends AbstractApplicationContext {
 	

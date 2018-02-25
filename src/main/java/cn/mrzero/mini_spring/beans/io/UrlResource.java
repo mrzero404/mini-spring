@@ -1,4 +1,4 @@
-package cn.mrzero.mini_spring.io;
+package cn.mrzero.mini_spring.beans.io;
 
 import java.io.IOException;
 import java.io.InputStream;

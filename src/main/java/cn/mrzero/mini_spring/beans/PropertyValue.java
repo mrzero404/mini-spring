@@ -1,4 +1,4 @@
-package cn.mrzero.mini_spring;
+package cn.mrzero.mini_spring.beans;
 
 public class PropertyValue {
 	
