@@ -16,5 +16,8 @@
         <property name="text" value="Hello World!"></property>
         <property name="outputService" ref="outputService"></property>
     </bean>
+    
+    <bean name="beanInitializeLogger" class="cn.mrzero.mini_spring.BeanInitializeLogger">
+    </bean>
 
 </beans>
